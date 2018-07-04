@@ -25,7 +25,7 @@ def plot_training_histories(*histories):
     return figure
 
 
-def confusion_matrix(model, validation_generator):
+def plot_confusion_matrix(model, validation_generator):
     '''Plot the confusion matrix, return precision and recall'''
     
     predictions = model.predict_generator(validation_generator)
